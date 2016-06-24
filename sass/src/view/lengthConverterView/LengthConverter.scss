@@ -3,7 +3,7 @@
     $ui-header-color: red,
     $ui-header-border-width: 5,
     $ui-body-background-color: #73807e
-);
+)
 
 .km_class label {
     color: #6edbff;
@@ -23,4 +23,124 @@
 
 .mm_class label {
     color: #1e49ff;
+}
+
+@-webkit-keyframes shake {
+    0% { transform: translate(0px); }
+    17% { transform: translate(10px); }
+    34% { transform: translate(-10px); }
+    51% { transform: translate(6px); }
+    68% { transform: translate(-6px); }
+    85% { transform: translate(3px); }
+    100% { transform: translate(0px); }
+}
+
+@keyframes shake {
+    0% { transform: translate(0px); }
+    17% { transform: translate(10px); }
+    34% { transform: translate(-10px); }
+    51% { transform: translate(6px); }
+    68% { transform: translate(-6px); }
+    85% { transform: translate(3px); }
+    100% { transform: translate(0px); }
+}
+
+.km_class:hover{
+      -webkit-animation: shake 2s;
+}
+
+@-webkit-keyframes scale {
+    0% { transform: scale(1); }
+    17% { transform: scale(1.2); }
+    34% { transform: scale(0.8); }
+    51% { transform: scale(1.1); }
+    68% { transform: scale(0.9); }
+    85% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes scale {
+    0% { transform: scale(1); }
+    17% { transform: scale(1.2); }
+    34% { transform: scale(0.8); }
+    51% { transform: scale(1.1); }
+    68% { transform: scale(0.9); }
+    85% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.mile_class:hover{
+    -webkit-animation: scale 1s;
+}
+
+@-webkit-keyframes colorChange {
+    0% { background-color: #499cff;}
+    17% { background-color: orange;}
+    34% { background-color: yellow;}
+    51% { background-color: red; }
+    68% { background-color: seagreen; }
+    85% { background-color: teal; }
+    100% { background-color: #499cff; }
+}
+
+@keyframes colorChange {
+    0% { background-color: #499cff;}
+    17% { background-color: orange;}
+    34% { background-color: yellow;}
+    51% { background-color: red; }
+    68% { background-color: seagreen; }
+    85% { background-color: teal; }
+    100% { background-color: #499cff; }
+}
+
+.meters_class:hover {
+    -webkit-animation: colorChange 1.5s;
+}
+
+@-webkit-keyframes skew {
+    0% { transform: skew(0deg,0deg); }
+    17% { transform: skew(20deg,20deg); }
+    34% { transform: skew(-20deg,-20deg); }
+    51% { transform: skew(10deg,10deg); }
+    68% { transform: skew(-10deg-10deg); }
+    85% { transform: skew(5deg,5deg); }
+    100% { transform: skew(0deg,0deg); }
+}
+
+@keyframes skew {
+    0% { transform: skew(0deg,0deg); }
+    17% { transform: skew(20deg,20deg); }
+    34% { transform: skew(-20deg,-20deg); }
+    51% { transform: skew(10deg,10deg); }
+    68% { transform: skew(-10deg-10deg); }
+    85% { transform: skew(5deg,5deg); }
+    100% { transform: skew(0deg,0deg); }
+}
+
+.cm_class:hover {
+    -webkit-animation: skew 1s;
+}
+
+@-webkit-keyframes bounce {
+    0% { transform: translateY(0px); }
+    17% { transform: translateY(10px); }
+    34% { transform: translateY(-10px); }
+    51% { transform: translateY(6px); }
+    68% { transform: translateY(-6px); }
+    85% { transform: translateY(3px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+    17% { transform: translateY(10px); }
+    34% { transform: translateY(-10px); }
+    51% { transform: translateY(6px); }
+    68% { transform: translateY(-6px); }
+    85% { transform: translateY(3px); }
+    100% { transform: translateY(0px); }
+}
+
+.mm_class:hover {
+    -webkit-animation: bounce 1.5s;
 }

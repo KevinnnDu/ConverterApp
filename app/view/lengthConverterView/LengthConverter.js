@@ -5,7 +5,7 @@ Ext.define('ConverterApp.view.lengthConverterView.LengthConverter', {
 
 
     width: 370,
-    bodyPadding: 10,
+    bodyPadding: 40,
     frame: true,
     draggable: true,
     ui: 'lengthConverter',
@@ -22,6 +22,7 @@ Ext.define('ConverterApp.view.lengthConverterView.LengthConverter', {
     },
 
     items: [{
+        margin: "0, 0, 30, 0",
         xtype: 'numberfield',
         fieldLabel: 'Kilometers',
         decimalPrecision: 2,
@@ -30,6 +31,7 @@ Ext.define('ConverterApp.view.lengthConverterView.LengthConverter', {
         cls: "km_class",
         bind: '{kms}'
     }, {
+        margin: "0, 0, 30, 0",
         xtype: 'numberfield',
         fieldLabel: 'Miles',
         decimalPrecision: 2,
@@ -38,6 +40,7 @@ Ext.define('ConverterApp.view.lengthConverterView.LengthConverter', {
         cls: "mile_class",
         bind: '{miles}'
     }, {
+        margin: "0, 0, 30, 0",
         xtype: 'numberfield',
         fieldLabel: 'Meters',
         decimalPrecision: 2,
@@ -46,6 +49,7 @@ Ext.define('ConverterApp.view.lengthConverterView.LengthConverter', {
         cls: "meters_class",
         bind: '{meters}'
     }, {
+        margin: "0, 0, 30, 0",
         xtype: 'numberfield',
         fieldLabel: 'Centimeters',
         decimalPrecision: 2,
@@ -54,8 +58,9 @@ Ext.define('ConverterApp.view.lengthConverterView.LengthConverter', {
         cls: "cm_class",
         bind: '{cm}'
     }, {
+        margin: "0, 0, 30, 0",
         xtype: 'numberfield',
-        fieldLabel: 'millimeters',
+        fieldLabel: 'Millimeters',
         decimalPrecision: 2,
         minValue: 0,
         step: 1,
