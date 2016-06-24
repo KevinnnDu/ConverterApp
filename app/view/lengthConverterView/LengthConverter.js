@@ -1,11 +1,22 @@
+//noinspection JSDuplicatedDeclaration,JSDuplicatedDeclaration
 Ext.define('ConverterApp.view.lengthConverterView.LengthConverter', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.convert',
-    title: 'Converter',
-
-
+    title: 'Length Converter',
+    
     width: 370,
     bodyPadding: 40,
+    header: {
+        items: [
+            {
+                xtype: 'button',
+                text: 'Volume Converter',
+                cls: 'switch_btn',
+                listeners: {
+                    click: 'onSwitchVolumeClick'
+                }
+            }]
+    },
     frame: true,
     draggable: true,
     ui: 'lengthConverter',

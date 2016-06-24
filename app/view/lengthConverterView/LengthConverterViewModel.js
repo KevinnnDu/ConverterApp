@@ -54,6 +54,6 @@ Ext.define('ConverterApp.view.lengthConverterView.LengthConverterViewModel', {
                 this.set('kms', km);
             }
         }
-    },
+    }
 
 });

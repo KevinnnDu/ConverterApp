@@ -1,33 +1,25 @@
 @include extjs-panel-ui(
-    $ui: 'lengthConverter-framed',
+    $ui: 'volumeConverter-framed',
     $ui-header-color: white,
-    $ui-header-background-color: #ff4f00,
+    $ui-header-background-color: blue,
     $ui-header-border-width: 5,
-    $ui-body-background-color: #cb6d14
+    $ui-body-background-color: #377aff
 )
 
-.x-btn-button-default-small {
-    background-color: #0C8AB2;
+.litre_class label {
+    color: #e4ff1a;
 }
 
-.km_class label {
-    color: #6edbff;
+.ml_class label {
+    color: #ff9100;
 }
 
-.mile_class label {
-    color: #6fc2ff;
+.gallon_class label {
+    color: #ff7825;
 }
 
-.meters_class label {
-    color: #499cff;
-}
-
-.cm_class label {
-    color: #2165ff;
-}
-
-.mm_class label {
-    color: #1e49ff;
+.barrel_class label {
+    color: #ff4d0e;
 }
 
 @-webkit-keyframes shake {
@@ -50,7 +42,7 @@
     100% { transform: translate(0px); }
 }
 
-.km_class:hover{
+.litre_class:hover{
       -webkit-animation: shake 2s;
 }
 
@@ -74,7 +66,7 @@
     100% { transform: scale(1); }
 }
 
-.mile_class:hover{
+.ml_class:hover{
     -webkit-animation: scale 1s;
 }
 
@@ -98,7 +90,7 @@
     100% { background-color: #499cff; }
 }
 
-.meters_class:hover {
+.gallon_class:hover {
     -webkit-animation: colorChange 1.5s;
 }
 
@@ -114,7 +106,7 @@
 
 @keyframes skew {
     0% { transform: skew(0deg,0deg); }
-    17% { transform: skew(20deg,20deg); }
+    17% { transform: skew(0deg,20deg); }
     34% { transform: skew(-20deg,-20deg); }
     51% { transform: skew(10deg,10deg); }
     68% { transform: skew(-10deg-10deg); }
@@ -122,7 +114,7 @@
     100% { transform: skew(0deg,0deg); }
 }
 
-.cm_class:hover {
+.barrel_class:hover {
     -webkit-animation: skew 1s;
 }
 
@@ -144,8 +136,4 @@
     68% { transform: translateY(-6px); }
     85% { transform: translateY(3px); }
     100% { transform: translateY(0px); }
-}
-
-.mm_class:hover {
-    -webkit-animation: bounce 1.5s;
 }

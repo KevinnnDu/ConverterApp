@@ -9,13 +9,19 @@ Ext.define('ConverterApp.view.main.MainController', {
 
     alias: 'controller.main',
 
-    onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+    requires: [
+        'ConverterApp.view.volumeConverterView.VolumeConverter',
+        'ConverterApp.view.lengthConverterView.LengthConverter'
+    ],
+
+    onSwitchVolumeClick: function() {
+        this.getView().getActiveTab().removeAll();
+        this.getView().getActiveTab().add({xtype: 'volumeConvert'});
     },
 
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
-        }
+    onSwitchLengthClick: function() {
+        this.getView().getActiveTab().removeAll();
+        this.getView().getActiveTab().add({xtype: 'convert'});
     }
+    
 });
