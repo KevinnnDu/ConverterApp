@@ -79,6 +79,7 @@ Ext.define('ConverterApp.view.main.Main', {
         title: 'Home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
+        layout: 'center',
         items: [{
             xtype: 'convert'
         }]

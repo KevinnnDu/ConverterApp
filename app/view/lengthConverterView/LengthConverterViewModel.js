@@ -3,7 +3,6 @@
  */
 Ext.define('ConverterApp.view.lengthConverterView.LengthConverterViewModel', {
     extend: 'Ext.app.ViewModel',
-
     alias: 'viewmodel.length',
 
     formulas: {

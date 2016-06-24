@@ -1,0 +1,26 @@
+@include extjs-panel-ui(
+    $ui: 'lengthConverter-framed',
+    $ui-header-color: red,
+    $ui-header-border-width: 5,
+    $ui-body-background-color: #73807e
+);
+
+.km_class label {
+    color: #6edbff;
+}
+
+.mile_class label {
+    color: #6fc2ff;
+}
+
+.meters_class label {
+    color: #499cff;
+}
+
+.cm_class label {
+    color: #2165ff;
+}
+
+.mm_class label {
+    color: #1e49ff;
+}
