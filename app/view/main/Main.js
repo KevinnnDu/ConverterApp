@@ -15,7 +15,7 @@ Ext.define('ConverterApp.view.main.Main', {
 
         'ConverterApp.view.main.MainController',
         'ConverterApp.view.main.MainModel',
-        'ConverterApp.view.main.Converter'
+        'ConverterApp.view.lengthConverterView.LengthConverter'
     ],
 
     controller: 'main',
