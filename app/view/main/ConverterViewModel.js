@@ -10,7 +10,22 @@ Ext.define('ConverterApp.view.main.ConverterViewModel', {
         kilos: {
             get: function (get) {
                 return get('miles') * 1.6;
+            },
+
+            set: function (km) {
+                var miles = this.getData().miles;
+                miles = km / 1.6;
+
+                this.set('miles', miles);
             }
         }
+    },
+
+    getKM: function(miles) {
+        var km;
+        if(miles) {
+            km = miles * 1.6;
+        }
+        return km;
     }
 });
