@@ -15,7 +15,7 @@ Ext.define('ConverterApp.view.main.Main', {
 
         'ConverterApp.view.main.MainController',
         'ConverterApp.view.main.MainModel',
-        'ConverterApp.view.main.List'
+        'ConverterApp.view.main.Converter'
     ],
 
     controller: 'main',
@@ -80,7 +80,7 @@ Ext.define('ConverterApp.view.main.Main', {
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
-            xtype: 'mainlist'
+            xtype: 'convert'
         }]
     }, {
         title: 'Users',
